@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora básica</title>
     <link rel="stylesheet" href="./css/main.css">
-    <title>Calculadora</title>
 </head>
 <body>
-    <div class="calculadora">
+    <main class="contenedor-principal">
+        <h1 id="titulo" class="titulo">Calculadora básica</h1>
 
-        <div class="pantalla">0</div>
+        <div id="calculadora" class="calculadora">
 
-        <button id="c" class="btn">C</button>
-        <button id="borrar" class="btn">←</button>
-        <button class="btn">/</button>
-        <button class="btn">*</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn">-</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn">+</button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button id="igual" class="btn">=</button>
-        <button id="cero" class="btn">0</button>
-        <button class="btn">.</button>
-    </div>
+            <div id="pantalla" class="pantalla">0</div>
 
+            <button id="c" class="btn btn-funcion" title="Limpiar">C</button>
+            <button id="borrar" class="btn btn-funcion" title="Borrar último dígito">←</button>
+
+            <button id="division" class="btn btn-operacion" title="División">/</button>
+            <button id="multiplicacion" class="btn btn-operacion" title="Multiplicación">*</button>
+
+            <button id="siete" class="btn btn-numero">7</button>
+            <button id="ocho" class="btn btn-numero">8</button>
+            <button id="nueve" class="btn btn-numero">9</button>
+            <button id="resta" class="btn btn-operacion" title="Resta">-</button>
+
+            <button id="cuatro" class="btn btn-numero">4</button>
+            <button id="cinco" class="btn btn-numero">5</button>
+            <button id="seis" class="btn btn-numero">6</button>
+            <button id="suma" class="btn btn-operacion" title="Suma">+</button>
+
+
+            <button id="uno" class="btn btn-numero">1</button>
+            <button id="dos" class="btn btn-numero">2</button>
+            <button id="tres" class="btn btn-numero">3</button>
+            <button id="igual" class="btn btn-resultado" title="Resultado">=</button>
+
+            <button id="cero" class="btn btn-numero">0</button>
+            <button id="punto" class="btn btn-numero">.</button>
+        </div>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>
